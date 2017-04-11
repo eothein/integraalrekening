@@ -1,1 +1,26 @@
 \chapter{Integratie door substitutie}
+
+\section{Lineariteit van integratie}
+De afgeleide van het veelvoud van een functie is het veelvoud
+van de de afgeleide van die functie.
+De afgeleide van de som van twee functies is de som van de afgeleide van beide functies. \\
+\begin{theorem}{Lineariteit van de integratie}
+	Stel dat $f$ en $g$ twee integreerbare functies zijn, $a,b \in \mathbb{R}$
+	, dan is
+	\begin{eqnarray}
+	\int_a^b (af(x) + bg(x)) \dx = & a \int_a^b f(x)\dx + b \int_a^b g(x) \dx
+	\end{eqnarray}
+\end{theorem}
+
+De kettingregel voor de afgeleide van samengestelde functies
+geeft aanleiding tot volgende stelling voor integralen.
+
+\begin{theorem}
+	Stel $f$ een functie met een primitieve F zodat 
+	\[ \int f(x) \dx = F(x) +C, C \in \mathbb{R}\]
+	en $g$ een afleidbare functie, dan is met $g(x) =t$  en $g'(x)\dx = dt$ 
+	
+	\begin{eqnarray}
+	\int f(g(x)).g'(x)\dx =  \int f(t) dt   = F(g(x)) + C, C \in \mathbb{R}
+	\end{eqnarray}
+\end{theorem}

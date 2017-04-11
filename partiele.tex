@@ -112,10 +112,38 @@ Enkele tips om parti\"ele integratie te herkennen:
 	
 \end{exercise}
 
+\begin{exercise}
+	Los onderstaande integraal op
+	\[ \int  ln(x) \dx \]
+	Stel $u(x) = x$ en $v'(x) = \frac{1}{x}$ zodat $v(x) = ln(x)$
+	\iftoggle{solution}{%
+		\begin{eqnarray}
+		\int  ln(x) \dx = & xln(x)- \int \frac{x}{x} \dx \\
+		& xln(x) - \int \dx = xln(x)-x+C \in  \mathbb{R}  
+		\end{eqnarray}
+	}{%
+		% electronic
+	}	
+\end{exercise}
+
+\begin{exercise}
+	Los onderstaande integraal op
+	\[ \int  (2x^2 - 4x)e^{2x} \dx \]
+Stel $u(x) = (2x^2 -4x)$ en $v'(x) = e^{2x}$ zodat $v(x) = \frac{e^{2x}}{2}$
+	\iftoggle{solution}{%
+		\begin{eqnarray}
+		\int  (2x^2 - 4x)e^{2x} \dx = &(x^2 -4x)\frac{e^{2x}}{2} - \int \frac{e^{2x}}{2} * (4x -4) \dx \\
+		& (x^2 - 3x  + \frac{3}{2}e^{2x} + C \in  \mathbb{R}  
+		\end{eqnarray}
+	}{%
+		% electronic
+	}	
+\end{exercise}
+
 \begin{theorem}{Parti\"ele integratie voor bepaalde integralen}
 	Stel $u$ en $v$ functies gedefinieerd op het interval $I$ en $[a,b]$ zit volledig in $I$ dan geldt:
 	\begin{eqnarray}
-		\int_a^b u(x)v'(x) = [u(x)v(x)]^b_a - \int_a^b v(x)du(x)
+	\int_a^b u(x)v'(x) = [u(x)v(x)]^b_a - \int_a^b v(x)du(x)
 	\end{eqnarray} 
 \end{theorem}
 
@@ -125,6 +153,9 @@ Enkele tips om parti\"ele integratie te herkennen:
 	Oplossing:
 	\iftoggle{solution}{%
 		\[ \int_1^e ln(x) d\frac{x^2}{2} = \frac{e^2}{4} + \frac{1}{4} \]
-	}
-	
+	}{}	
 \end{exercise}
+
+\
+
+
